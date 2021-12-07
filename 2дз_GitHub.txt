@@ -1,0 +1,304 @@
+ Дз по GitHub
+4) Создать внешний репозиторий с названием JSON: на GitHub создаём новый репозиторий JSON
+5) Клонировать репозиторий JSON на локальный компьютер: git clone https://github.com/Tatyshef1/JSON.git
+6) Внутри локального JSON создать файл "new.json": сначала перейдём в JSON (cd JSON), затем touch new.json
+7) Добавить файл под гит: git add new.json
+8) Закоммитить файл: git commit -m "добавлен файл new.json
+9) Отправить файл на внешний GitHub репозиторий: git push
+10) Отредактировать содержание файла "new.json" - написать информацию о себе (ФИО, возраст, количество 
+домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+I
+
+{
+    "Full_name": "Shevchenko Tatyana Nikolaevna",
+    "age": 33,
+    "number_of_pets": 1,
+    "desired_salary": 70000
+}
+
+жмём Esc затем :wq
+
+11) Отправить изменения на внешний репозиторий: сначала делаем команду git add .
+затем команда git commit -m "добавлена информация о себе в файл new.json"
+и команда git push
+12) Создать файл preferences.json: touch preferences.json
+13) В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал,
+любимая еда, любимое время года, страна которую хотела бы посетить). Сделать это в формате JSON:
+
+сначала vim preferences.json
+I
+
+{
+"Favorite_movie": "Gone with the Wind",
+"favorite_TV_series": "Magnificent Century",
+"favorite_food": "manti",
+"favorite_season": "summer",
+"the country_I_want_to_visit": "Germany"
+}
+
+esc
+:wq
+enter
+14) Создать файл sclls.json добавить информацию о скиллах, которые будут изучены на курсе в формате JSON:
+touch sclls.json
+vim sclls.json
+I
+
+{
+"skill": "Python",
+"skill": "the Scrum software development methodology",
+"skill": "Jmeter",
+"skill": "Git",
+"skill": "SQL",
+"skill": "access to remote servers",
+"skill": "simple bash scripting",
+"skill": "command line terminal linux Ubuntu",
+"skill": "the proxy settings on IOS and Android",
+"skill": "Charles",
+"skill": "build Android application in Android Studio"
+"skill": "mobile testing",
+"skill": "DevTools web browsers",
+"skill": "VPN",
+"skill": "the Fiddler",
+"skill": "removing and reading logs",
+"skill": "API testing"
+}
+
+esc
+:wq
+enter
+15) Отправить сразу два файла на внешний репозиторий:
+сначала команда git add .
+git commit -a -m "добавлен файл preferences.json и файл sclls.json"
+git push
+
+16) На веб интерфейсе создать файл bug_report.json: на GitHub жмём "добавить файл" и создать новый файл.
+17) Сделать commit changes (сохранить) изменения на внешнем интерфейсе:  внизу жмём кнопку "сохранить 
+изменения"
+18) На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON:
+{
+"ID": "Metro17",
+"Title": "Incorrect parameters, maximum-scale subway layout",
+"Description": "you Can bring the scheme to an unreadable state",
+"Steps_to_reproduse": ["Open metro map https://qa-metro.stand-2.praktikum-services.ru/",
+"Click on the + icon 6"],
+"Actual_result": "The scheme has increased to an unreadable state",
+"Expected_result": "After 3-6 clicks, the scheme stops increasing",
+"Priority": "Average",
+"Environment": ["Windows 8", "Google Chrome browser", "77.0.3865.90"]
+
+}
+
+19) Сделать commit changes (сохранить) изменения на веб интерфейсе: нажать кнопку "сохранить изменения"
+20) Синхронизировать внешний и локальный репозиторий:
+git fetch
+git pull
+
+xml
+
+21) Создать внешний репозиторий с названием XML:на GitHub создать репозиторий XML
+22) Клонировать репозиторий на локальный компьютер: git clone https://github.com/Tatyshef1/XML.git
+23) Внутри локального XML создать файл “new.xml”: 
+
+Сначала cd XML
+touch new.xml
+24) Добавить файл под гит: git add new.xml
+25) Закоммитить файл: git commit -m "добавлен файл new.xml"
+26) Отправить файл на внешний GitHub репозиторий: git push
+27)Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, 
+будущая желаемая зарплата). Всё написать в формате XML:
+
+vim new.txt
+I
+<xml>
+<full_name>Shevchenko Tatiana Nikolaevna</full_name>
+<age>33</age>
+<number_of pets="animals">1</number_of>
+<future_salary>70000</future_salary>
+</xml>
+
+esc
+:wq
+28) Отправить изменения на внешний репозиторий: git add .
+jit commit -m "добавлена информация о себе в файл "new.xml"
+git push
+29)Создать файл preferences.xml: touch preferences.xml
+30) В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, 
+любимая еда, любимое время года, строна которую хочу посетить) в формате XML:
+vim preferences.xml
+I
+vim preferences.xml
+Y
+
+<xml>
+<favority_movie>Gone with the wind</favority_movie>
+<favorite_TV_series>Magnificent century</favorite_TV_series>
+<favorite_food>mantu</favorite_food>
+<time_of_the_year>summer</time_of_the_year>
+<country_visit>Germany</country_visit>
+</xml>
+esc
+Y
+enter
+31) Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML:
+touch sklls.xml
+vim sklls.xml
+I
+<xml>
+
+<skill_1>Mobile testing</skill_1>
+<skill_2>Feature of iOS, Android, guidelines</skill_2>
+<skill_3>Building iOS apps on XCode</skill_3>
+<skill_4>Building Android apps on Android Studio</skill_4>
+<skill_5>Interception of mobile traffic (sniffing) via Charles</skill_5>
+<skill_6>Proxy settings on iOS and Android</skill_6>
+<skill_7>Linux Ubuntu Command line (terminal)</skill_7>
+<skill_8> Simple bash scripting, automation of routine tasks on the server</skill_8>
+<skill_9>Access to remote servers</skill_9>
+<skill_10>SQL Basics (Create, Delete, Drop, Insert Into, Select, From, Where, Join</skill_10>
+<skill_11>Git</skill_11>
+<skill_12>Jmeter</skill_12>
+<skill_13>Scrum Development methodology</skill_13>
+<skill_14>Python.Creating your own client-server application</skill_14>
+<skill_15>VPN</skill_15>
+<skill_16>DevTools</skill_16>
+<skill_17>API testing</skill_17>
+<skill_18>Removing logs</skill_18>
+<skill_19>Postman and Fiddler</skill_19>
+<skill_20>What is JSON, XML</skill_20>
+<skill_21>Structure of requests and responses</skill_21>
+<skill_23>Client-server architecture</skill_23>
+
+</xml>
+esc
+:wq
+32)Сделать коммит в одну строку:
+git add .
+git commit -am "Добавлены скиллы в файл sclls.xml"
+33) Отправить сразу 2 файла на внешний репозиторий: git push
+34) На веб интерфейсе создать файл bug_report.xml: на GitHub жмём "добавить файл" и затем "создать файл"
+35) Сделать Commit changes (сохранить) изменения на веб интерфейсе: жмём кнопку "сохранить изменения"
+36)  На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML: нажимаем на файл bug_report.xml
+и вставляем
+
+<xml>
+<id>Metro17</id>
+<Title>Incorrect parameters of the maximum scale of the metro scheme</Title>
+<Description>It is possible to approximate the scheme to an unreadable state</Description>
+<steps_to_reproduce>Open the metro map https://qa-metro.stand-2.praktikum-services.ru/</steps_to_reproduce>
+<steps_to_reproduce>Click on the +icon more than 6 times</steps_to_reproduce>
+<Factual_result>The scheme has increased to an unreadable state</Factual_result>
+<Expected_result>After 3-6 clicks, the scheme stops increasing</Expected_result>
+<Environment>Windows 8, Google Chrome Browser Version 77.0.3865.90</Environment>
+<Priority>Average</Priority>
+</xml>
+
+37) Сделать Commit changes (сохранить) изменения на веб интерфейсе: нажать кнопку "сохранить изменения"
+38) Синхронизировать внешний и локальный репозиторий XML: git fetch
+git pull
+
+
+txt
+1) Создать внешний репозиторий с названием TXT: создаём репозиторий на GitHub
+2) Клонировать репозиторий TXT на локальный компьютер: git clone https://github.com/Tatyshef1/TXT.git
+3) Внутри локального репозитория создать файл "new.txt: 
+сначала команда cd TXT
+touch new.txt
+4) Добавить файл под гит: git add new.txt
+5) Закоммитить файл: git commit -m "добавление файла new.txt
+6) Отправить файл на внешний GitHub репозиторий: git push
+7) Отредактировать содержимое файла "new.txt" - написать информацию о себе (ФИО, возраст,количество домашних животных, 
+будущая желаемая зарплата). Всё написать в формате TXT:
+
+nano new.txt 
+
+ФИО: Шевченко Татьяна Николаевна
+возраст: 33 года
+количество домашних животных: 1
+будущая желаемая зарплата: 70000 рублей
+
+Затем нажимаешь Ctrl+X  и затем Y. Нажимаем Enter
+8) Отправить изменения на внешний репозиторий: 
+
+git add .
+git commit -m "добавлена информация о себя в файл new.txt"
+git push
+9) Создать файл preferences.txt: touch preferences.txt
+10) В файл preferences.txt добавить информацию о своих предпочтениях (любимый фильм, любимый сериал, любимая еда,
+любимое время года, страна которую хотела бы посетить) в формате txt:
+
+vim preferences.txt
+I
+
+Любимый фильм: Унесённые ветром
+любимый сериал: Великолепный век
+любимая еда: манты
+любимое время года: лето
+страна, которую хотела бы посетить: Германия
+
+esc
+:wq
+11) Создать файл sclls.txt добавить информацию о скиллах, которые будут изучены на курсе в формате txt.
+touch sclls.txt
+vim sclls.txt
+
+I
+
+
+1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC
+2. Что такое клиент серверная архитектура.
+3. Методы запросов на сервер.
+4. Ответы сервера.
+5. Структуры запросов и ответов.
+6. Что такое JSON, XML. Их структура.
+7. Тестирование API.
+8. Снятие и чтение логов.
+9. Postman, Fidler.
+10. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)
+11. Dev Tools веб браузеров (Google Chrome, FireFox).
+12. Мобильное тестирование.
+13. Особенность iOS, Android, гайдлайны.
+14. Сборка iOS приложений на XCode
+15. Сборка Android приложений на Android Studio
+16. Перехват мобильного трафика (сниффинг) через Charles
+17. Настройка прокси на iOS и Android.
+18. Командная строка (terminal) Linux Ubuntu. Копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса. 
+19. Простой bash скриптринг , автоматизация рутинных задач на сервере.
+20. Доступ к удалённым серверам.
+21. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join
+22. Git
+23. Jmeter
+24. Методология разработки Scrum
+25. Python. Создание собственного клиент-серверного приложения.
+
+esc 
+:wq
+12) Сделать коммит в одну строку:
+
+сначала git add .
+
+ git commit -am "добавлена информация о скиллах в файл sclls.txt"
+13) Отправить сразу два файла на внешний репозиторий: git push
+14) На веб интерфейсе создать файл bug_repurt.txt: создаём файл на GitHub
+15) Сделать Commit changes (сохранить) изменения на веб интерфейсе: жмём кнопку "сохранить изменения"
+16) На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+редактируем файл bug_report.txt
+
+Id: Metro23
+Заглавие: Серый кружок выбранной станции в полях From и To левой панели Яндекс.метро
+Описание: Кружок, который показывает, на какой линии находится станция в полях From и To всегда серого цвета
+
+Шаги воспроизведения: 1) Открыть схему https://qa-metro.stand-2.praktikum-services.ru/san-francisco?lang=en
+2) Выбрать станцию в поле From или To.
+Фактический результат: у выбранной станции кружок серого цвета.
+Ожидаемый результат: цвет кружка соответствует цвету линии.
+Окружение: MacOS 10.14.6, Firefox 69.0
+Приоритет: низкий
+17) Сделать Commit changes (сохранить) изменения на веб интерфейсе: нажать кнопку "сохранить изменения"
+18)Синхронизировать внешний и локальный репозиторий TXT: git fetch
+git pull
+
+
+
