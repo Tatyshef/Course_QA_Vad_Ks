@@ -1,4 +1,4 @@
-Moble testing Android
+Mobile testing Android
 HW_1
 
 Чек-листы по приложению ToDo List смотреть по ссылке:
